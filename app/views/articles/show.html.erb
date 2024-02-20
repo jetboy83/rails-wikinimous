@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <h2 class="mb-3"><%= @article.title %></h2>
+  <h3 class="mb-4 text-muted"><%= @article.content %></h3>
+
+  <%= link_to articles_path, class: "btn btn-secondary me-2" do %>
+    <i class="fas fa-arrow-left"></i> Back to List
+  <% end %>
+
+  <%= link_to edit_article_path(@article), class: "btn btn-primary" do %>
+    <i class="fas fa-edit"></i> Edit Article
+  <% end %>
+</div>
